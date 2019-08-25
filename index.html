@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="https://use.typekit.net/zkx0clx.css" />
+		<link rel="stylesheet" href="/main.css" />
+		<script src="https://kit.fontawesome.com/b2feb44c30.js"></script>
+		<title>Chris Keller</title>
+	</head>
+	<body>
+		<header>
+			<div class="headerContainer">
+				<nav>
+					<label for="toggle">&#9776</label>
+					<input type="checkbox" id="toggle" />
+
+					<div class="menu">
+						<a href="#">Home</a>
+
+						<a href="#project">Projects</a>
+
+						<a href="#about">About</a>
+
+						<a href="#contact" class="btnOutlined">Contact</a>
+					</div>
+				</nav>
+				<h1>
+					<span class="smallHeader fadeInSlow">My name is <br /></span>
+					<span class="fadeIn">Christopher Keller.<br /></span>
+					<span class="coloredHeader fadeInSlow">I build things.</span>
+				</h1>
+				<a href="#contact" class="headerBtnFilled fadeIn">Get in touch</a>
+				<a
+					href="/assets/ResumeChrisKeller.pdf"
+					download
+					class="headerBtnOutlined fadeIn"
+					>Resume</a
+				>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="projectShowcase">
+				<div class="contentVertical">
+					<div class="project" id="project">
+						<h2>
+							Term Tracker
+						</h2>
+						<p>
+							Android application intended to allow WGU students to plan their
+							terms and course selections. Allows the user to take notes for
+							courses and schedule alerts for assessments. Utilizes a SQLite
+							database to hold term, course, and assessment information, as well
+							as optional course notes.
+						</p>
+						<a
+							href="https://github.com/ckeller22/WGU-Term-Tracker"
+							class="btnFilled"
+						>
+							<img src="assets/GitHub-Mark-Light-32px.png"/>
+							<img src="assets/GitHub_Logo_White.png"
+						/></a>
+					</div>
+					<div class="project trigger">
+						<h2>
+							Customer Management System
+						</h2>
+						<p>
+							JavaFX application intended to be used as a customer management
+							system for a fictitious company. Communicates with a pre-existing
+							mySQL database to manage and store customer and appointment
+							records, as well as user information.
+						</p>
+						<a
+							href="https://github.com/ckeller22/Customer-Management-Software"
+							class="btnFilled hvr-grow"
+						>
+							<img src="assets/GitHub-Mark-Light-32px.png"/>
+							<img src="assets/GitHub_Logo_White.png"
+						/></a>
+					</div>
+				</div>
+				<div class="projectTitle">
+					<h2>
+						Projects
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="about" id="about">
+				<div class="aboutTitle">
+					<h2>About Me</h2>
+				</div>
+				<div class="contentVertical">
+					<div class="content">
+						<p>
+							I am a software engineer, based in the Seattle-Tacoma area,
+							specializing in developing and designing high-quality websites and
+							applications. I'm currently a student at Western Governor's
+							University, pursuing my Bachelors of Software Development.
+						</p>
+					</div>
+					<div class="content">
+						<p>
+							I have experience working with the following technologies:
+						</p>
+						<ul>
+							<li>
+								<i class="fab fa-java fa-3x"></i>
+								<h3>Java</h3>
+							</li>
+
+							<li>
+								<i class="fas fa-database fa-3x"></i>
+								<h3>SQL</h3>
+							</li>
+
+							<li>
+								<i class="fab fa-html5 fa-3x"></i>
+
+								<h3>HTML/CSS</h3>
+							</li>
+
+							<li>
+								<i class="fab fa-js fa-3x"></i>
+								<h3>JavaScript</h3>
+							</li>
+							<li>
+								<i class="fab fa-react fa-3x"></i>
+								<h3>React</h3>
+							</li>
+							<li>
+								<i class="fab fa-node-js fa-3x"></i>
+								<h3>Node.js</h3>
+							</li>
+						</ul>
+					</div>
+					<div class="content">
+						<div class="imageBox">
+							<img src="assets/portfolioImage.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="contact" id="contact">
+				<div class="project" id="flip">
+					<p id="callToAction">
+						Got a project idea, or an interesting challenge for me? Let me know!
+					</p>
+				</div>
+
+				<form class="contactForm">
+					<input type="text" class="name" placeholder="Name" />
+					<input type="email" class="email" placeholder="Email" />
+					<textarea
+						class="description"
+						placeholder="Tell me about your project!"
+					></textarea>
+					<input type="submit" class="submit btnOutlined" />
+				</form>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		
+
+		<script src="app.js"></script>
+	</body>
+</html>
