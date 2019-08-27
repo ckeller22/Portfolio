@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" href="https://use.typekit.net/zkx0clx.css" />
-		<link rel="stylesheet" href="/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 		<script src="https://kit.fontawesome.com/b2feb44c30.js"></script>
 		<title>Chris Keller</title>
 	</head>
@@ -154,14 +154,14 @@
 					</p>
 				</div>
 
-				<form class="contactForm">
-					<input type="text" class="name" placeholder="Name" />
-					<input type="email" class="email" placeholder="Email" />
+				<form id="contactForm" action="index.php" method="POST">
+					<input type="text" id="name" placeholder="Name" />
+					<input type="email" id="email" placeholder="Email" />
 					<textarea
-						class="description"
+						id="description"
 						placeholder="Tell me about your project!"
 					></textarea>
-					<input type="submit" class="submit btnOutlined" />
+					<input type="submit" class="btnOutlined" id="submit" value="Submit" onclick="sendEmail()"/>
 				</form>
 			</div>
 		</div>
