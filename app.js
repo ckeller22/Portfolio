@@ -1,3 +1,22 @@
+/*function handleMail() {
+	var form = $("#contact-form");
+	console.log("mailbutton");
+
+	$(form).submit(function(event) {
+		event.preventDefault();
+	});
+
+	var formData = $(form).serialize();
+	console.log(formData);
+	$.ajax({
+		type: "POST",
+		url: $(form).attr("action"),
+		data: formData
+	});
+}*/
+
+//scroll magic
+
 const controller = new ScrollMagic.Controller();
 var projectScroll;
 var aboutScroll;
