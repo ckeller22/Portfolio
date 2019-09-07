@@ -153,15 +153,16 @@
 						Got a project idea, or an interesting challenge for me? Let me know!
 					</p>
 				</div>
-
-				<form id="contactForm" action="handleMail.php" method="POST">
+				<form id="contactForm" action="" method="POST">
+					<p id="emailSent">Thanks for reaching out! I'll be in touch shortly.</p>
 					<input type="text" id="name" placeholder="Name" />
 					<input type="email" id="email" placeholder="Email" />
 					<textarea
 						id="description"
 						placeholder="Tell me about your project!"
+					
 					></textarea>
-					<input type="submit" class="btnOutlined" id="submit" value="Submit" />
+					<input type="submit" class="btnOutlined" id="submit" value="Submit" onclick="event.preventDefault(); handleMail();" />
 				</form>
 			</div>
 		</div>

@@ -110,6 +110,14 @@ textarea::-webkit-scrollbar-thumb:window-inactive {
 	color: lightgray;
 }
 
+.visible {
+	visibility: visible;
+}
+
+.hidden {
+	visibility: collapse;
+}
+
 /*--global--*/
 
 /*--nav--*/
@@ -435,6 +443,12 @@ header {
 		@include gradient();
 		color: white;
 	}
+}
+
+#emailSent {
+	display: none;
+	text-align: center;
+	color: white;
 }
 
 /*--contact--*/
@@ -797,6 +811,10 @@ header {
 	.content {
 		width: 100vw;
 		height: 100vh;
+	}
+
+	#emailSent {
+		color: black;
 	}
 }
 
